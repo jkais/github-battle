@@ -14,6 +14,22 @@ REACT
 -> Redux (when React's state is not enough)
 
 WEBPACK
+- Bundle stuff
+- Entrypoint and Output
+- Transformations with Loaders (Babel, CSS, SVG...)
+- Plugins
+- Mode
 
 JSX
 - React.Fragment for more than one element returned by a render
+
+PROPS
+- Props are the arguments of Components
+- Props can be any kind of JS object
+- <Component name="Test"> => this.props.name
+
+LISTS
+- list.map((item) => (<div>{item.name}</div>))
+- a list needs a key=item.id so that React can distinguish the elements
+
+
