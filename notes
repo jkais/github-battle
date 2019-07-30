@@ -1,0 +1,19 @@
+
+
+REACT
+- Composition with Components (Element)
+- ReactDOM
+- Declarative UI
+- Pure Javascript
+- Redux
+
+-> Babel
+-> Webpack
+-> Routing (React Router)
+-> Styling (Traditional CSS vs CSS in JS (styled components))
+-> Redux (when React's state is not enough)
+
+WEBPACK
+
+JSX
+- React.Fragment for more than one element returned by a render
