@@ -2,13 +2,8 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import './index.css'
 
-// Component
-// State
-// Lifecycle
-// UI
-
 class App extends React.Component {
-  render () {
+  render() {
     return (
       <div>
         Hello World!
@@ -17,4 +12,7 @@ class App extends React.Component {
   }
 }
 
-ReactDOM.render(<App />, document.getElementById('app'))
+ReactDOM.render(
+  <App />,
+  document.getElementById('app')
+)
