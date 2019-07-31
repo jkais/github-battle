@@ -32,4 +32,6 @@ LISTS
 - list.map((item) => (<div>{item.name}</div>))
 - a list needs a key=item.id so that React can distinguish the elements
 
-
+UGLY
+- In Component constructors you have to bind this like here: this.updateLanguage = this.updateLanguage.bind(this)
+- Getting used to updating state with this.setState instead of this.state.value = 1
