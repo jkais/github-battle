@@ -44,6 +44,10 @@ COMPONENT LIFECYCLE
 ICONS
 - Just https://react-icons.netlify.com/
 
+
+FORMS
+- Controlled (state in Component) vs Uncontrolled (state in Form)
+
 WHAT I DIDN'T LIKE
 - In Component constructors you have to bind this like here: this.updateLanguage = this.updateLanguage.bind(this)
 - Getting used to updating state with this.setState instead of this.state.value = 1
