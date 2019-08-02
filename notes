@@ -1,5 +1,3 @@
-
-
 REACT
 - Composition with Components (Element)
 - ReactDOM
@@ -43,8 +41,10 @@ COMPONENT LIFECYCLE
 2. Update - componentDidUpdate
 3. Unmount - componentWillUnmount
 
+ICONS
+- Just https://react-icons.netlify.com/
 
-UGLY
+WHAT I DIDN'T LIKE
 - In Component constructors you have to bind this like here: this.updateLanguage = this.updateLanguage.bind(this)
 - Getting used to updating state with this.setState instead of this.state.value = 1
 - React Hooks should ease this a bit by introducing funcional components
