@@ -31,11 +31,18 @@ PROPS
 LISTS
 - list.map((item) => (<div>{item.name}</div>))
 - a list needs a key=item.id so that React can distinguish the elements
-- no strange framework hooks like in Angular or Vue
+- no strange framework magic like in Angular or Vue (v-for...)
 
 PROP TYPES
 - validate the types of props that are passed to a Component
 - it is not TypeScript, but still...
+
+
+COMPONENT LIFECYCLE
+1. Mount (Initial State, DOM Node) - componentDidMount
+2. Update - componentDidUpdate
+3. Unmount - componentWillUnmount
+
 
 UGLY
 - In Component constructors you have to bind this like here: this.updateLanguage = this.updateLanguage.bind(this)
