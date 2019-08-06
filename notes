@@ -53,6 +53,11 @@ REUSING COMPONENTS
 - if the component has no state, you can just use a function that returns JSX
 - handling state between components feels a bit strange at the beginning (passing functions, having fun with this...)
 
+HIGHER ORDER COMPONENTS
+- a function that you pass a Component and it then returns a Component with additional functionality
+- doesn't sound good for your brain
+
+
 WHAT I DIDN'T LIKE
 - In Component constructors you have to bind this like here: this.updateLanguage = this.updateLanguage.bind(this)
 - Getting used to updating state with this.setState instead of this.state.value = 1

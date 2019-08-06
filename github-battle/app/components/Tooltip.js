@@ -24,10 +24,10 @@ const styles = {
   }
 }
 
-function Tooltip ({ text, children, hovering }) {
+function Tooltip ({ text, children, hover }) {
   return (
     <div style={styles.container}>
-      {hovering && <div style={styles.tooltip}>{text}</div>}
+      {hover && <div style={styles.tooltip}>{text}</div>}
       {children}
     </div>
   )
@@ -35,7 +35,7 @@ function Tooltip ({ text, children, hovering }) {
 
 Tooltip.propTypes = {
   text: PropTypes.string.isRequired,
-  hovering: PropTypes.bool.isRequired
+  hover: PropTypes.bool.isRequired
 }
 
-export default WithHover(Tooltip)
+export default WithHover(Tooltip, 'hover')
