@@ -2,6 +2,8 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { fetchPopularRepos } from '../utils/api'
 import { FaUser, FaStar, FaCodeBranch, FaExclamationTriangle } from 'react-icons/fa'
+import Card from './Card'
+import Loading from './Loading'
 
 function LanguagesNav ({ selected, onUpdateLanguage }) {
   const languages = ['All', 'JavaScript', 'Ruby', 'Java', 'CSS', 'Python']
@@ -38,10 +40,9 @@ function ReposGrid ({ repos }) {
         const { login, avatar_url } = owner
 
         return (
-          <li key={html_url} className="card bg-light">
+          <li key={html_url}>
             <Card
               header={`#${index + 1}`}
-              subheader={`Score: ${winner.score}`}
               avatar={avatar_url}
               href={html_url}
               name={login}
@@ -131,7 +132,7 @@ export default class Popular extends React.Component {
           onUpdateLanguage={this.updateLanguage}
         />
 
-        {this.isLoading() && <p>LOADING...</p>}
+        {this.isLoading() && <Loading />}
         {error && <p className="center-text error">{error.message}</p>}
         {repos[selectedLanguage] && <ReposGrid repos={repos[selectedLanguage]}></ReposGrid>}
       </React.Fragment>
