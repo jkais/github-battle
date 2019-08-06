@@ -135,7 +135,15 @@ export default class Battle extends React.Component {
 
     if (battle === true) {
       return (
-        <Results playerOne={this.state.playerOne} playerTwo={this.state.playerTwo}/>
+        <Results
+          playerOne={this.state.playerOne}
+          playerTwo={this.state.playerTwo}
+          onReset={() => this.setState({
+            playerOne: null,
+            playerTwo: null,
+            battle: false
+          })}
+        />
       )
     } else {
       return (
@@ -146,12 +154,12 @@ export default class Battle extends React.Component {
             <div className="row space-around">
               {
                 playerOne === null
-                  ?  <PlayerInput label="Player One" onSubmit={(player) => this.handleSubmit('playerOne', player)} />
+                  ? <PlayerInput label="Player One" onSubmit={(player) => this.handleSubmit('playerOne', player)} />
                   : <PlayerPreview username={playerOne} onReset={() => this.handleReset('playerOne')} label="Player One" />
               }
               {
                 playerTwo === null
-                  ?  <PlayerInput label="Player Two" onSubmit={(player) => this.handleSubmit('playerTwo', player)} />
+                  ? <PlayerInput label="Player Two" onSubmit={(player) => this.handleSubmit('playerTwo', player)} />
                   : <PlayerPreview username={playerTwo} onReset={() => this.handleReset('playerTwo')} label="Player Two" />
               }
             </div>
