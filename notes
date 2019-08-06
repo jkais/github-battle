@@ -48,6 +48,11 @@ ICONS
 FORMS
 - Controlled (state in Component) vs Uncontrolled (state in Form)
 
+REUSING COMPONENTS
+- creating reusable components ist pretty easy and handy
+- if the component has no state, you can just use a function that returns JSX
+- handling state between components feels a bit strange at the beginning (passing functions, having fun with this...)
+
 WHAT I DIDN'T LIKE
 - In Component constructors you have to bind this like here: this.updateLanguage = this.updateLanguage.bind(this)
 - Getting used to updating state with this.setState instead of this.state.value = 1
