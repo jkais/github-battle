@@ -1,3 +1,8 @@
+/*
+  Use it like this: export default WithHover(Tooltip, 'hover')
+  In this case 'hover' is the name of the hovering state in Tooltip
+*/
+
 import React from 'react'
 
 export default function WithHover (Component, propName = 'hovering') {

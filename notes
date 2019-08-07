@@ -56,7 +56,13 @@ REUSING COMPONENTS
 HIGHER ORDER COMPONENTS
 - a function that you pass a Component and it then returns a Component with additional functionality
 - doesn't sound good for your brain
+- can cause naming collisions if the passed component uses the same name for state
 
+Render Props
+- Some kind of Wrapper Component
+- Works by passing a function called i.e. render as props and then call it inside the wrapper's render
+- Not only works with render, just pass a function als props and then call it.
+- Of course you can also use the children props for passing a function
 
 WHAT I DIDN'T LIKE
 - In Component constructors you have to bind this like here: this.updateLanguage = this.updateLanguage.bind(this)
