@@ -6,7 +6,7 @@ import Results from './Results'
 function Instructions () {
   return (
     <div className="instruction-container">
-      <h1 className="center-text header-lg">Instructions! Hallo!</h1>
+      <h1 className="center-text header-lg">Instructions</h1>
       <ol className="container-sm grid center-text battle-instructions">
         <li>
           <h3 className="header-sm">Enter two GitHub users</h3>
