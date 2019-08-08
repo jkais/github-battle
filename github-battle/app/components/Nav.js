@@ -1,5 +1,5 @@
 import React from 'react'
-import { ThemeConsumer } from '../context/Theme'
+import { ThemeConsumer } from '../contexts/Theme'
 
 export default function Nav () {
   return (

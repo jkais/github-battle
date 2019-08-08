@@ -4,7 +4,7 @@ import './index.css'
 import Nav from './components/Nav'
 import Popular from './components/Popular'
 import Battle from './components/Battle'
-import { ThemeProvider } from './context/Theme'
+import { ThemeProvider } from './contexts/Theme'
 
 class App extends React.Component {
   constructor(props) {
