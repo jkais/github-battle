@@ -36,7 +36,7 @@ function ReposGrid ({ repos }) {
   return (
     <ul className="grid space-around">
       {repos.map((repo, index) => {
-        const { owner, html_url, stargazers_count, forks, open_issues } = repo
+        const { name, owner, html_url, stargazers_count, forks, open_issues } = repo
         const { login, avatar_url } = owner
 
         return (
@@ -45,7 +45,7 @@ function ReposGrid ({ repos }) {
               header={`#${index + 1}`}
               avatar={avatar_url}
               href={html_url}
-              name={login}
+              name={name}
             >
               <ul className="card-list">
                 <li>
