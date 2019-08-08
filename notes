@@ -64,6 +64,14 @@ Render Props
 - Not only works with render, just pass a function als props and then call it.
 - Of course you can also use the children props for passing a function
 
+React Context
+- Share data between components
+
+
+
+
+
+
 WHAT I DIDN'T LIKE
 - In Component constructors you have to bind this like here: this.updateLanguage = this.updateLanguage.bind(this)
 - Getting used to updating state with this.setState instead of this.state.value = 1
