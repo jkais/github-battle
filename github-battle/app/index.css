@@ -237,5 +237,10 @@ li {
   color: #ff1616;
   font-size: 20px;
   margin: 50px 0;
+}
 
+.dark {
+  color: #DADADA;
+  background: #1C2022;
+  min-height: 100%
 }
