@@ -65,7 +65,7 @@ Render Props
 - Of course you can also use the children props for passing a function
 
 React Context
-- Share data between components
+- Share data between components, Provider an Consumer, Provider an Consumer
 
 
 
