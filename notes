@@ -58,15 +58,18 @@ HIGHER ORDER COMPONENTS
 - doesn't sound good for your brain
 - can cause naming collisions if the passed component uses the same name for state
 
-Render Props
+RENDER PROPS
 - Some kind of Wrapper Component
 - Works by passing a function called i.e. render as props and then call it inside the wrapper's render
 - Not only works with render, just pass a function als props and then call it.
 - Of course you can also use the children props for passing a function
 
-React Context
+REACT CONTEXT
 - Share data between components, Provider an Consumer, Provider an Consumer
 
+REACT ROUTER
+- React Router is not a part of React, but instead a component built in React
+- It does not use static routing and is just a React component
 
 
 
@@ -77,3 +80,11 @@ WHAT I DIDN'T LIKE
 - Getting used to updating state with this.setState instead of this.state.value = 1
 - React Hooks should ease this a bit by introducing funcional components
 - Passing functions to components that will be executed on a specific event is not good for your brain
+
+WHAT I DIDN'T DO
+- Typescript
+- Redux
+- CSS with JS
+- Testing
+- React Native
+- GraphQL
