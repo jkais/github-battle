@@ -74,6 +74,10 @@ REACT ROUTER
 QUERY STRINGS
 - add node package 'query-string' and you can parse them like queryString.parse(this.props.location.search)
 
+CODE SPLITTING
+- different ways; most popular are: Webpack bundle and dynamic import() => if you can avoid webpack, do it!
+- Split on Routing, split on Component React.lazy() to lazy load, React.Suspend to show loading
+
 
 
 
