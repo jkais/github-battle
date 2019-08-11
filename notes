@@ -71,6 +71,8 @@ REACT ROUTER
 - React Router is not a part of React, but instead a component built in React
 - It does not use static routing and is just a React component
 
+QUERY STRINGS
+- add node package 'query-string' and you can parse them like queryString.parse(this.props.location.search)
 
 
 
@@ -88,3 +90,4 @@ WHAT I DIDN'T DO
 - Testing
 - React Native
 - GraphQL
+- Optimize production build

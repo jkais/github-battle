@@ -67,6 +67,7 @@ export default class Results extends React.Component {
 
   componentDidMount () {
     const { playerOne, playerTwo } = queryString.parse(this.props.location.search)
+
     battle([playerOne, playerTwo])
       .then((players) => {
         this.setState({
@@ -98,7 +99,7 @@ export default class Results extends React.Component {
       <React.Fragment>
         <div className="grid space-around container-sm">
           <Card
-            header={winner.score === loser.score ? "Tie" : "Winner"}
+            header={winner.score === loser.score ? 'Tie' : 'Winner'}
             subheader={`Score: ${winner.score}`}
             avatar={winner.profile.avatar_url}
             href={winner.profile.html_url}
@@ -108,7 +109,7 @@ export default class Results extends React.Component {
           </Card>
 
           <Card
-            header={winner.score === loser.score ? "Tie" : "Loser"}
+            header={winner.score === loser.score ? 'Tie' : 'Loser'}
             subheader={`Score: ${loser.score}`}
             avatar={loser.profile.avatar_url}
             href={loser.profile.html_url}
