@@ -1,5 +1,5 @@
 import React from 'react'
-import { KeyProvider } from '../contexts/Key'
+import { setApiKey } from '../utils/ApiKey'
 
 export default class EnterKey extends React.Component {
   state = {
@@ -7,7 +7,8 @@ export default class EnterKey extends React.Component {
   }
 
   onSubmit = (event) => {
-    onValidKey(this.state.apiKey)
+    event.preventDefault()
+    setApiKey(this.state.apiKey)
   }
 
   onChange = (event) => {
@@ -17,21 +18,18 @@ export default class EnterKey extends React.Component {
 
   render () {
       return (
-        <KeyProvider>
-          <div>
-            <h1>Enter</h1>
-            <form onSubmit={this.onSubmit}>
-              <input 
-                type='text'
-                name='apikey'
-                value={this.state.apiKey}
-                onChange={this.onChange}
-              />
-              <button>Set</button>
-              <div>Key: {this.state.apiKey}</div>
-            </form>
-          </div>
-        </KeyProvider>
+        <div>
+          <h1>Enter</h1>
+          <form onSubmit={this.onSubmit}>
+            <input 
+              type='text'
+              name='apikey'
+              value={this.state.apiKey}
+              onChange={this.onChange}
+            />
+            <button>Set</button>
+          </form>
+        </div>
       )
   }
 }
