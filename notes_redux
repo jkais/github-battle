@@ -1,0 +1,10 @@
+WHAT'S REDUX
+- Shared state tree
+- State resides outside of Components
+- Components can then be Pure Functions
+- Get - Listen - Update
+
+Simple Store
+- Reducer functions define (pure) functions how to change the state
+- subscribe (and unsubscribe) to listen to changes
+- Dispatch actions from Reducer to modify the state and then call the listeners
