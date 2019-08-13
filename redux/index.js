@@ -23,7 +23,6 @@ function createStore (reducer) {
   }
 
   return {
-    state,
     getState,
     subscribe,
     dispatch
