@@ -1,5 +1,6 @@
 import React from 'react'
 import { getProfile } from '../utils/api'
+import { ApiKeyConsumer } from '../context/ApiKey'
 import Loading from './Loading'
 
 export default class Main extends React.Component {
@@ -17,16 +18,17 @@ export default class Main extends React.Component {
 
   render () {
     return (
-      <React.Fragment>
-        {this.state.userinfo
+      <ApiKeyConsumer>
+        {({ apiKey }) => (
+          this.state.userinfo
           ? (
               <h1>
                 Hallo {this.state.userinfo.username}
               </h1>
           )
           : <Loading />
-        }
-      </React.Fragment>
+        )}
+      </ApiKeyConsumer>
     )
   }
 }

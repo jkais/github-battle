@@ -1,15 +1,21 @@
 import React from 'react'
-import { resetApiKey } from '../utils/ApiKey'
-
+import { ApiKeyConsumer } from '../context/ApiKey'
 
 export default function Nav () {
   return (
-    <nav>
-      <button
-        onClick={resetApiKey}
-      >
-        Reset
-      </button>
-    </nav>
+    <ApiKeyConsumer>
+      {
+        ({ resetApiKey }) => (
+          <nav>
+            <button
+              onClick={resetApiKey}
+            >
+              Reset
+            </button>
+          </nav>
+        )
+      }
+
+    </ApiKeyConsumer>
   )
 }
