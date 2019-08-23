@@ -12,13 +12,13 @@ function LanguagesNav ({ selected, onUpdateLanguage }) {
     <ul className='flex-center'>
       {
         languages.map((language) => (
-          <li key={language}>
+          <li key={ language }>
             <button
               className='btn-clear nav-link'
               style={ language === selected ? { color: 'rgb(187, 46, 31)' } : null }
-              onClick={() => onUpdateLanguage(language)}
+              onClick={ () => onUpdateLanguage(language) }
             >
-              {language}
+              { language }
             </button>
           </li>
         ))

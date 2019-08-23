@@ -24,16 +24,16 @@ class App extends React.Component {
   render () {
     return (
       <Router>
-        <ThemeProvider value={this.state}>
-          <div className={this.state.theme}>
+        <ThemeProvider value={ this.state }>
+          <div className={ this.state.theme }>
             <div className='container'>
               <Nav />
-              <React.Suspense fallback={<Loading />}>
+              <React.Suspense fallback={ <Loading /> }>
                 <Switch>
-                  <Route exact path='/' component={Popular} />
-                  <Route exact path='/battle' component={Battle} />
-                  <Route exact path='/battle/results' component={Results} />
-                  <Route render={() => <h1>404</h1>} />
+                  <Route exact path='/' component={ Popular } />
+                  <Route exact path='/battle' component={ Battle } />
+                  <Route exact path='/battle/results' component={ Results } />
+                  <Route render={ () => <h1>404</h1> } />
                 </Switch>
               </React.Suspense>
             </div>
